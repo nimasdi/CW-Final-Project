@@ -76,5 +76,9 @@ Vim has a feature called registers which allows you to save and recall text, com
 
 Memory leaks occur when a program allocates memory but fails to release it when it's no longer needed. This results in wasted memory that cannot be reclaimed by the system, eventually leading to performance issues or program crashes. Memory leaks often happen due to programming errors such as forgetting to deallocate memory, losing references to allocated memory, or improperly managing memory in dynamic data structures like linked lists or trees.
 
+\subsubsection{Memory Profilers}
+Valgrind is a versatile programming tool suite primarily used for debugging and profiling applications on Unix-like systems. Its key feature is detecting memory leaks, a common issue where we discussed above, leading to performance degradation or crashes. Valgrind tracks memory allocations and deallocations, providing detailed reports pinpointing the locations of memory leaks in the code. Additionally, it offers tools for detecting memory errors, thread errors, and profiling performance, making it an essential resource for developers working on C, C++, and similar languages to ensure the reliability and efficiency of their software.
+
+
 
 \end{document}
