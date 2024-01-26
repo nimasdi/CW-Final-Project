@@ -18,7 +18,7 @@ To initialize the repository and make commits, follow the instructions provided 
 
 ### GitHub Actions for LaTeX Compilation
 
-GitHub Actions are set up for automatically after including .github/workflow, compiling the LaTeX document. Simply push commits with tags in v*.*.* format to trigger the compilation.
+GitHub Actions are set up for automatically after including .github/workflow, compiling the LaTeX document. Simply push commits with tags in `v*.*.*` format to trigger the compilation.
 
 ## Exploration Tasks
 
