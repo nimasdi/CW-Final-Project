@@ -30,14 +30,12 @@
 
 \newpage
 
-
-
 \section{Git and Github}
 \subsection{Repository Initialization and Commits}
 First go Github website. Go to your repository, next using the new button create a new repository. Next you can name your repository and add a readme if you need to and then create the repository. Now you can clone the repository to your computer. Next we create the tex file and add the Github workflow file that was given.
 
 \subsection{GitHub Actions for LaTeX Compilation}
-First we need to add .github/workflow file that was given in the example repository to our project. After that you need to also add tags in v*.*.* format to your commits then GitHub actions will automatically compile the latex file. The main point is to include the main.yml and its content to your repository.
+First we need to add .github/workflow file that was given in the example repository to our project. After that you need to also add tags in \textbf{"v*.*.*"} format to your commits then GitHub actions will automatically compile the latex file. The main point is to include the main.yml and its content to your repository.
 
 
 \section{Exploration Tasks}
@@ -46,20 +44,20 @@ First we need to add .github/workflow file that was given in the example reposit
 Vim allows you to collapse sections of code or text to make navigation easier. You can fold and unfold sections based on indentation, syntax, or manually define folds. Here's how to use folding:
 
 \begin{itemize}
-\item To enable folding, use the command \textbf{:set foldmethod=<method>}, where \textbf{<method>} can be \textbf{indent} for folding based on indentation, \textbf{syntax} for folding based on syntax highlighting, or \textbf{manual} for manual folding.
-\item To fold sections manually, move the cursor to the line you want to fold and use the command zf<movement>, where <movement> is a motion command like j, k, \}, etc.
-\item To unfold a fold, move the cursor to the folded line and use the command zo.
-\item To close all folds, use the command zM, and to open all folds, use zR.
+\item To enable folding, use the command \textbf{":set foldmethod=<method>"}, where \textbf{<method>} can be \textbf{"indent"} for folding based on indentation, \textbf{"syntax"} for folding based on syntax highlighting, or \textbf{"manual"} for manual folding.
+\item To fold sections manually, move the cursor to the line you want to fold and use the command \textbf{"zf<movement>"}, where \textbf{<movement>} is a motion command like \textbf{j}, \textbf{k,} \textbf{\}}, etc.
+\item To unfold a fold, move the cursor to the folded line and use the command \textbf{"zo"}.
+\item To close all folds, use the command \textbf{"zM"}, and to open all folds, use \textbf{"zR"}.
 \end{itemize}
 
 \subsubsection{Vimdiff}
 Vim comes with a built-in tool for file comparison called Vimdiff. It allows you to view the differences between two or three files and merge changes interactively. Here's how to use Vimdiff:
 
 \begin{itemize}
-\item Run \textbf{vimdiff file1 file2} to open two files in Vimdiff.
+\item Run \textbf{"vimdiff file1 file2"} to open two files in Vimdiff.
 \item You'll see the differences highlighted in colors.
-\item Use commands like \textbf{do} to obtain changes from the other window, \textbf{dp} to put changes into the other window, and\textbf{ ]c} and \textbf{[c} to navigate between changes.
-\item After resolving conflicts, save the merged file with \textbf{:w}.
+\item Use commands like \textbf{"do"} to obtain changes from the other window, \textbf{"dp"} to put changes into the other window, and\textbf{ "]c"} and \textbf{"[c"} to navigate between changes.
+\item After resolving conflicts, save the merged file with \textbf{":w"}.
 \end{itemize}
 
 \subsubsection{Registers}
@@ -67,7 +65,7 @@ Vim has a feature called registers which allows you to save and recall text, com
 
 \begin{itemize}
 \item To yank (copy) text into a register, use \textbf{"ay <movement>} ,where \textbf{"a} is the register name (a-z) and \textbf{<movement>} is the motion command to specify the text you want to yank.
-\item To paste from a register, use \textbf{"ap} where "a is the register name.
+\item To paste from a register, use \textbf{"ap} where \textbf{"a} is the register name.
 \item You can also use registers to store macros. After recording a macro with \textbf{q <letter>}, you can yank it into a register with \textbf{"ay} and then paste it later with \textbf{"ap}.
 \item Vim also has special registers like \textbf{"*} for the system clipboard and \textbf{"+} for the unnamed register which is used for normal yank and delete operations.
 \end{itemize}
@@ -104,6 +102,13 @@ zathura "$(fd -e pdf | fzf)"
 \subsubsection{README.md}
 for this section we edit and update the readme file that was created when we first created the repository.
 
+\subsection{Issues}
+A screenshot of the sample issue:
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{sample-issue.png} 
+\caption{The sample issue that i created}
+\end{figure}
 
 
 \end{document}
